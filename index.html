@@ -1,5 +1,95 @@
-<h1>QUIZ STRAFVORDERING</h1>
-<ul>
-  <li><a href="quiz_strafvordering_fre.html">Quiz Strafvordering - Fré</a></li>
-  <li><a href="quiz_strafvordering_joni.html">Quiz Strafvordering - Joni</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Strafvordering</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f2937;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .tile {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 50px 30px;
+      text-decoration: none;
+      color: #1f2937;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .tile .icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .tile h2 {
+      margin: 0 0 15px;
+      color: #2563eb;
+      font-size: 2rem;
+    }
+
+    .tile p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Quiz Strafvordering</h1>
+
+  <div class="container">
+
+    <a href="quiz_strafvordering_fre.html" class="tile">
+      <div class="icon">👨‍🎓</div>
+      <h2>Fré</h2>
+      <p>Start de quiz</p>
+    </a>
+
+    <a href="quiz_strafvordering_joni.html" class="tile">
+      <div class="icon">👨‍🎓</div>
+      <h2>Joni</h2>
+      <p>Start de quiz</p>
+    </a>
+
+  </div>
+
+</body>
+</html>
